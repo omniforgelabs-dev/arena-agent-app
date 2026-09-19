@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "ai.arena.agent"
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "ai.arena.agent"
         minSdkVersion 22
-        targetSdkVersion 34
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
