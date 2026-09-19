@@ -1,0 +1,6 @@
+{
+  "appId": "ai.arena.agent",
+  "appName": "Arena Agent",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
