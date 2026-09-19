@@ -35,13 +35,13 @@ jobs:
       - name: Initialize Capacitor Android Platform
         run: |
           npx cap add android || true
-          npx cap copy android || true
+          npx cap sync android || true
 
-      - name: Build Android APK
+      - name: Build Android APK with Debug Flags
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          ./gradlew assembleDebug --no-daemon --info
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
