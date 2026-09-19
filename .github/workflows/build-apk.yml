@@ -32,13 +32,10 @@ jobs:
       - name: Build Web Assets
         run: npm run build
 
-      - name: Re-add Capacitor Android Platform
+      - name: Initialize Capacitor Android Platform
         run: |
-          rm -rf android
-          npx cap add android
-
-      - name: Copy Dist Web Assets
-        run: npx cap copy android
+          npx cap add android || true
+          npx cap copy android || true
 
       - name: Build Android APK
         run: |
